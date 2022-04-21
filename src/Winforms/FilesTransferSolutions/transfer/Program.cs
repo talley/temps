@@ -1,21 +1,35 @@
-﻿static class Program
+﻿
+using Microsoft.Extensions.Logging;
+
+static class Program
 {
+    private static ITransfer _transfer;
+    static Program()
+    {
+
+    }
     static  async Task<int> Main(string[] args)
     {
-        
+        var serviceProvider = new ServiceCollection()
+           .AddLogging()
+           .AddSingleton<ITransfer, TransferRepository>()
+           .BuildServiceProvider();
+        var transferService = serviceProvider.GetService<ITransfer>();
+
+
         WriteLine("Add a new pair of source and destination folders;");
         WriteLine("Exit.");
         var result = 0;
         var arguments = args;
         WriteLine($"arguments:{JsonConvert.SerializeObject(arguments)}");
-        WriteLine($"arguments length:{len(arguments)}");
-        if (len(arguments)<5)
+        WriteLine($"arguments length:{arguments.len()}");
+        if (arguments.len()<5)
         {
             WriteLine(@"Please input source and destination folder");
         }
         else
         {
-
+            var mapper = MapHelper.GetMapper();
             var sourceOption = new Option<string>(
              "-s",
              getDefaultValue: () => "",
@@ -43,5 +57,5 @@
         return result;
     }
 
-    static int len(string[] str) => str.Length;
+
 }

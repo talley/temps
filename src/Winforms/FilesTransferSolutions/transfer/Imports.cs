@@ -11,3 +11,10 @@ global using AutoMapper;
 global using FilesTransferApp.Infrastructure.Repositories;
 global using Ninject;
 global using Ninject.Modules;
+global using  transfer.Helpers;
+global using transfer.Exts;
+global  using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Logging.Console;
+global using Microsoft.Extensions.Logging;
+

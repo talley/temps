@@ -38,3 +38,13 @@ C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin
 C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Ninject.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\transfer\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

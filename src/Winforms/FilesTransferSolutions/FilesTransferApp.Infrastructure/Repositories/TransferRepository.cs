@@ -11,7 +11,7 @@ namespace FilesTransferApp.Infrastructure.Repositories
     {
         public void TransferFiles(IList<string> files)
         {
-            throw new NotImplementedException();
+
         }
 
         public async Task TransferFilesAsync(IList<string> files)
