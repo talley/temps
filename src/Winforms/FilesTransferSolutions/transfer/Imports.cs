@@ -1,0 +1,13 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using static System.Console;
+global using  System.CommandLine;
+global using Newtonsoft.Json;
+global using FilesTransferApp.Core.Interfaces;
+global using AutoMapper;
+global using FilesTransferApp.Infrastructure.Repositories;
+global using Ninject;
+global using Ninject.Modules;

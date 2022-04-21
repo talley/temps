@@ -1,0 +1,15 @@
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\bin\Debug\net6.0\FilesTransferApp.Infrastructure.deps.json
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\bin\Debug\net6.0\FilesTransferApp.Infrastructure.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\bin\Debug\net6.0\FilesTransferApp.Infrastructure.pdb
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.AssemblyInfo.cs
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\refint\FilesTransferApp.Infrastructure.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.pdb
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\ref\FilesTransferApp.Infrastructure.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\bin\Debug\net6.0\FilesTransferApp.Core.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\bin\Debug\net6.0\FilesTransferApp.Core.pdb
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Infrastructure\obj\Debug\net6.0\FilesTransferApp.Infrastructure.csproj.CopyComplete

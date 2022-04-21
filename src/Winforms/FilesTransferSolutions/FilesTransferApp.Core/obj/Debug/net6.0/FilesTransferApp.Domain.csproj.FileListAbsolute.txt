@@ -1,0 +1,12 @@
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\bin\Debug\net6.0\FilesTransferApp.Domain.deps.json
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\bin\Debug\net6.0\FilesTransferApp.Domain.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\bin\Debug\net6.0\FilesTransferApp.Domain.pdb
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.csproj.AssemblyReference.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.AssemblyInfoInputs.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.AssemblyInfo.cs
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.csproj.CoreCompileInputs.cache
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\refint\FilesTransferApp.Domain.dll
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\FilesTransferApp.Domain.pdb
+C:\Codes\FileTransferDemo\temps\src\Winforms\FilesTransferSolutions\FilesTransferApp.Domain\obj\Debug\net6.0\ref\FilesTransferApp.Domain.dll
