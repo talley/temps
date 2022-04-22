@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ywqqr+0QNNdxvfI5MA6ZrfKkHGVmg3v3WDkt5tW0GwVK3K5Pjg8OjUKjMd2SU40vL9ieKpMNrvzV+JEsIVt5FQ==",
+  "dgSpecHash": "eYMuGBs2IKNkUKqDchZCtNCChgZq2eI59F+Hy9EJJIL2jyX9c8AYoHlcYLRTlWkagXyBcFzcx0SnDV63WBXVpQ==",
   "success": true,
   "projectFilePath": "C:\\Codes\\FileTransferDemo\\temps\\src\\Winforms\\FilesTransferSolutions\\transfer\\transfer.csproj",
   "expectedPackageFiles": [
@@ -85,6 +85,7 @@
     "C:\\Users\\ourota\\.nuget\\packages\\system.text.regularexpressions\\4.1.0\\system.text.regularexpressions.4.1.0.nupkg.sha512",
     "C:\\Users\\ourota\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\ourota\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
+    "C:\\Users\\ourota\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\system.threading.tasks.dataflow.6.0.0.nupkg.sha512",
     "C:\\Users\\ourota\\.nuget\\packages\\system.threading.tasks.extensions\\4.0.0\\system.threading.tasks.extensions.4.0.0.nupkg.sha512",
     "C:\\Users\\ourota\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\ourota\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",

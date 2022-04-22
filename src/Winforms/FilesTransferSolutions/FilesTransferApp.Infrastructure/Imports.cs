@@ -6,3 +6,5 @@ global using System.Threading.Tasks;
 global using static System.Console;
 global using FilesTransferApp.Core.Interfaces;
 global using System.IO;
+global using  FilesTransferApp.Infrastructure.Exts;
+global using System.Collections.Concurrent;

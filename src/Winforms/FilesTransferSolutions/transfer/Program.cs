@@ -1,61 +1,71 @@
 ﻿
-using Microsoft.Extensions.Logging;
-
 static class Program
 {
-    private static ITransfer _transfer;
-    static Program()
-    {
-
-    }
     static  async Task<int> Main(string[] args)
     {
-        var serviceProvider = new ServiceCollection()
-           .AddLogging()
-           .AddSingleton<ITransfer, TransferRepository>()
-           .BuildServiceProvider();
-        var transferService = serviceProvider.GetService<ITransfer>();
-
-
-        WriteLine("Add a new pair of source and destination folders;");
-        WriteLine("Exit.");
-        var result = 0;
         var arguments = args;
-        WriteLine($"arguments:{JsonConvert.SerializeObject(arguments)}");
-        WriteLine($"arguments length:{arguments.len()}");
-        if (arguments.len()<5)
+        while (true)
         {
-            WriteLine(@"Please input source and destination folder");
-        }
-        else
-        {
-            var mapper = MapHelper.GetMapper();
-            var sourceOption = new Option<string>(
-             "-s",
-             getDefaultValue: () => "",
-             description: "please enter source path"
-            );
-            var destinationOption = new Option<string>(
-                "-d",
-                getDefaultValue: () => "",
-                description: "please enter source path"
-               );
-
-            var rootCommand = new RootCommand { sourceOption, destinationOption };
-
-            rootCommand.Aliases.Append("transfer");
-
-            rootCommand.SetHandler((string source, string destination) =>
+            WriteLine("Add a new pair of source and destination folders;");
+            WriteLine("Exit.");
+            var choice=ReadLine();
+            switch (choice)
             {
-                Console.WriteLine($"The value for -s is: {source}");
-                Console.WriteLine($"The value for -d is: {destination}");
-            }, sourceOption, destinationOption);
+                case "Exit":
+                    WriteLine("Add a new pair of source and destination folders;");
+                    WriteLine("Exit.");
+                    Console.ReadLine();
+                    break;
 
-            result = await rootCommand.InvokeAsync(args).ConfigureAwait(false);
+                default:
+                    await Task.Run(async () =>
+                    {
+
+                        var serviceProvider = ServiceProviderDI.GetProvider();
+                        var transferService = serviceProvider.GetService<ITransfer>();
+
+
+                        if (arguments.len() < 5)
+                        {
+                            WriteLine(@"Please input source and destination folder");
+                        }
+                        else
+                        {
+                            var sourceOption = new Option<string>(
+                             "-s",
+                             getDefaultValue: () => "",
+                             description: "please enter source path"
+                            );
+                            var destinationOption = new Option<string>(
+                                "-d",
+                                getDefaultValue: () => "",
+                                description: "please enter source path"
+                               );
+
+                            var rootCommand = new RootCommand { sourceOption, destinationOption };
+
+                            rootCommand.Aliases.Append("transfer");
+
+                            rootCommand.SetHandler(async (string source, string destination) =>
+                            {
+                                WriteLine($"The value for -s is: {source}");
+                                WriteLine($"The value for -d is: {destination}");
+
+
+                                var folderPaths = new List<string> { source, destination };
+                                // await transferService.TransferFilesAsync(folderPaths).ConfigureAwait(false);
+
+                            }, sourceOption, destinationOption);
+
+                            await rootCommand.InvokeAsync(args).ConfigureAwait(false);
+                        }
+                    }).ConfigureAwait(false);
+                    WriteLine("Add a new pair of source and destination folders;");
+                    WriteLine("Exit.");
+                    break;
+            }
+
         }
-
-        return result;
     }
-
 
 }

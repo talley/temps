@@ -1,9 +1,7 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
+
 
 namespace FilesTransferApp.Infrastructure.Repositories
 {
@@ -16,21 +14,53 @@ namespace FilesTransferApp.Infrastructure.Repositories
 
         public async Task TransferFilesAsync(IList<string> files)
         {
-            if(files == null || !files.Any())
+            try
             {
-                throw new ArgumentNullException("There no files to process.");
-            }
-            else
-            {
-                var sourcePath=files.FirstOrDefault();
-                var destinationPath = files.LastOrDefault();
-                using (var SourceStream = File.Open(sourcePath!, FileMode.Open))
+                if (files?.Any() != true)
                 {
-                    using (var DestinationStream = File.Create(destinationPath!))
+                    throw new ArgumentNullException("There no files to process.");
+                }
+                else
+                {
+                    var sourcePath = files.FirstOrDefault();
+                    var destinationPath = files.LastOrDefault();
+                    using (BlockingCollection<string> filesQueue = new BlockingCollection<string>())
                     {
-                        await SourceStream.CopyToAsync(DestinationStream).ConfigureAwait(false);
+                        var populateFiles = Task.Run(() =>
+                        {
+                            filesQueue.Add(sourcePath!);
+                            filesQueue.Add(destinationPath!);
+                            filesQueue.CompleteAdding();
+                        });
+                        var consumeFiles = Task.Run(async () =>
+                          {
+                              try
+                              {
+                                  var bufferSize = 1024 * 128;
+                                  var queueFiles = filesQueue.GetConsumingEnumerable();
+                                  var queueSourcePath= queueFiles.FirstOrDefault();
+                                  var queueDestinationPath= queueFiles.LastOrDefault();
+                                  using (var SourceStream = File.Open(queueSourcePath!, FileMode.Open,FileAccess.ReadWrite))
+                                  {
+                                      using (var DestinationStream = File.Create(queueDestinationPath!))
+                                      {
+                                          await SourceStream.CopyToAsync(DestinationStream, bufferSize).ConfigureAwait(false);
+                                      }
+                                  }
+                              }
+                              catch (InvalidOperationException ex) when(ex!=null)
+                              {
+                                  throw ex;
+                              }
+                          });
+                        await Task.WhenAll(populateFiles, consumeFiles);
                     }
                 }
+            }
+            catch (Exception ex) when(ex!=null)
+            {
+                ex.LogExceptionToDatabase();
+                throw;
             }
 
         }
