@@ -1,0 +1,21 @@
+let countriesUrl='countries.json';
+
+function loadCountriesGrid() {
+    var tbl=$('#tblcountries');
+    $.getJSON(countriesUrl, function (data) {
+         console.log(data);
+        var tr = data;
+        for (var i = 0; i < data.length; i++) {
+
+            var tr = $('<tr/>');
+            $(tr).append("<td>" + i+ "</td>");
+            $(tr).append("<td>" + data[i]['name'] + "</td>");
+            $(tr).append("<td>" + data[i]['code'] + "</td>");
+
+            tbl.append(tr);
+        };// end for loop
+
+        tbl.DataTable();
+
+    });  // end getJSON
+}
